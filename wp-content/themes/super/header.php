@@ -10,8 +10,29 @@
 </head>
 
 <header class="header">   
-	<nav class="top-bar" data-topbar role="navigation">
-	 
-	</nav>
+	<div class="groovy-title-row">
+		<div class="groovy-title">
+
+		</div>
+	</div> 
+	<div class="dev-specs-row">
+		<div class="left">
+
+		</div>
+		<div class="middle">
+
+		</div>
+		<div class="right">
+
+		</div>
+	</div>
+	<div class="informer-row">
+		<div class="payment-gateway-logo">
+
+		</div>
+		<div class="informer">
+
+		</div>
+	</div>
 </header>
 <body <?php body_class(); ?>>

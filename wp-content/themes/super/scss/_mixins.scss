@@ -1,3 +1,4 @@
+@import "foundation/components/grid";
 //Mixins
 
 //Media query for styles after medium up.
@@ -18,3 +19,12 @@
   width:100%;
   padding:.5em;
 }
+
+//___________________________________ defining custom row names _______________________________
+//
+.groovy-title-row, .dev-specs-row, .informer-row, .steps-row, .describe-row, .chat-row, .pay-row {
+	@include grid-row();
+}
+
+//___________________________________ defining custom column names _______________________________
+//
