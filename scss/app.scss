@@ -1,5 +1,13 @@
+@import "compass";
 @import "settings";
-@import "foundation";
+//@import "foundation"; KITCHEN SINK
+@import "mixins";
+@import "foundation/components/grid";
+@import "base";
+@import "components/_defaults.scss";
+@import "components/_footer.scss";
+@import "components/_front-page.scss";
+@import "components/_header.scss";
 
 // Or selectively include components
 // @import

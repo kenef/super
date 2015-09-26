@@ -1,0 +1,60 @@
+@import "foundation/components/grid";
+//Mixins
+
+//Media query for styles after medium up.
+@mixin desktop{
+  @media #{$medium-up}{
+    @content;
+  }
+ }
+
+ @mixin tablet{
+    @media #{$tablet-down}{
+    @content;
+  }
+}
+
+//Just want some padding on mobile
+@mixin full-width{
+  width:100%;
+  padding:.5em;
+}
+
+//___________________________________ defining custom row names _______________________________
+//
+.banner, .banner-content, .banner-timer {
+	@include grid-row();
+}
+
+
+
+
+//___________________________________ defining custom column names _______________________________
+//
+.banner-left, .banner-middle, .banner-right{
+	//Mobile-first: full-width
+	@include grid-column(12);
+
+	//Medium+ size
+	@media #{$medium-up} {
+		@include grid-column(4);
+	}
+}
+.merchants {
+	//Mobile-first: full-width
+	@include grid-column(12);
+
+	//Medium+ size
+	@media #{$medium-up} {
+		@include grid-column(4);
+	}
+}
+.timer {
+	//Mobile-first: full-width
+	@include grid-column(12);
+
+	//Medium+ size
+	@media #{$medium-up} {
+		@include grid-column(8);
+	}
+}
