@@ -1,38 +1,17 @@
-            <div class="banner">
-            	<h1>Super Fast Development</h1>
-            	<div class="banner-content">
-            		<div class="banner-left">
-            			<h3>Emergency Fix</h3>
-            			<p>On demand developers for when your site crashes, something
-            			 goes wrong or you just want something fixed right now.</p>
-            		</div>
-            		<div class="banner-middle">
-            			<h3>Expert American Devs</h3>
-            			<p>All our developers have at least 3 years of professional 
-            				programming experience and sometimes, degrees.</p>
-            		</div>
-            		<div class="banner-right">
-            			<h3>$200 Per Hour</h3>
-            			<p>Immediate, simple and confidential. You get our undivided attention at $200 per hour.</p>
-            		</div>
-            	</div>
-            	<div class="banner-timer">
-            		<div class="merchants">
-            			<img src="" alt="" />
-            			<img src="" alt="" />
-            		</div>
-            		<div class="timer">
-
-            		</div>
-            	</div>
-            </div>
-
-            <div class="row">
-
-            </div>
-
-            <div class="row">
-
+            <div class="four-steps">
+				<nav class="main-nav">
+					<ul>
+						<li class="step1"><h3>Step 1</h3><p>basic info</p></li>
+						<li class="step2"><h3>Step2</h3><p>chat with dev</p></li>
+						<li class="step3"><h3>Step3</h3><p>pay</p></li>
+						<li class="step4"><h3>Step4</h3><p>relax</p></li>
+					</ul>
+				</nav>
+            	<form>
+            		<textarea name="description" id= "description" placeholder="Describe your issue" rows="6" required></textarea>
+            		<p>Note: in 99% of the case we need your hosting information. Please have this on hand.</p>
+            		<input type="submit" value="Next" />
+            	</form>
             </div>
 
             <script src="bower_components/jquery/dist/jquery.min.js"></script>
