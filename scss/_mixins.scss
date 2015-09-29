@@ -22,7 +22,7 @@
 
 //___________________________________ defining custom row names _______________________________
 //
-.banner, .banner-content, .banner-timer, .four-steps, .chat {
+.banner, .banner-content, .banner-timer, .four-steps {
 	@include grid-row();
 }
 
@@ -56,5 +56,31 @@
 	//Medium+ size
 	@media #{$medium-up} {
 		@include grid-column(12);
+	}
+}
+.chat-column {
+	//Mobile-first: full-width
+	@include grid-column(12);
+
+	//Medium+ size
+	@media #{$medium-up} {
+		@include grid-column(12);
+	}
+}
+.main-nav {
+	//Mobile-first: full-width
+	@include grid-column(12);
+
+	//Medium+ size
+	@media #{$medium-up} {
+		@include grid-column(12);
+	}
+	li {
+		@include grid-column(12);
+
+		//Medium+ size
+		@media #{$medium-up} {
+			@include grid-column(4);
+		}
 	}
 }

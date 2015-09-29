@@ -1,9 +1,9 @@
 <?php
   session_start();
-  include 'includes/connections.php';
   include 'includes/php_functions.php';
+  include 'includes/connections.php';
 
-  include 'header.php';
-  include 'front-page.php';
+  include 'header1.php';
+  include 'chat-box.php';
   include 'footer.php';
 ?>

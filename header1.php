@@ -1,3 +1,14 @@
+<?php
+        include 'includes/connections.php';
+//counting available devs
+        $query = "SELECT clients FROM devs WHERE status=1 AND clients=0";
+        $queryResult = mysql_query($query, $con);
+        $devs = mysql_num_rows($queryResult);
+        //echo $devs;
+
+        session_start();
+        $_SESSION['devs'] = $devs;
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 	<head>
@@ -7,6 +18,25 @@
 		<link rel="stylesheet" href="stylesheets/app.css" />
 		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 		<script src="js/jquery-1.11.3.min.js"></script>
+                <script>
+                        function submitChat(){
+                                if(form1.uname.value == '' || form1.msg.value == '') {
+                                        alert('ALL FIELDS ARE REQUIRED');
+                                        return;
+                                }
+                                var uname = form1.uname.value;
+                                var msg = form1.msg.value;
+                                var xmlhttp = new XMLHttpRequest();
+
+                                xmlhttp.onreadystatechange = function() {
+                                if(xmlhttp.readyState==4 && xmlhttp.status==200) {
+                                        document.getElementById('chatlogs').innerHTML = xmlhttp.responseText;
+                                }
+                        }
+                        xmlhttp.open('GET', 'insert.php?uname='+uname+'&msg='+msg, true);
+                        xmlhttp.send();
+                        }
+                </script>
 	</head>
 	<header>
 
@@ -36,7 +66,7 @@
         	</div>
         	<div class="banner-timer">
         		<div class="timer">
-        			<h1>2 Devs on Standby</h1>
+        			<h1><?php echo $devs;?> Devs on Standby</h1>
         		</div>
         	</div>
         </div>

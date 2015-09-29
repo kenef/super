@@ -1,17 +1,21 @@
 <?php
-	$user = 'root';
-	$password = 'root';
-	$db = 'super';
-	$host = 'localhost';
-	$port = 3306;
+	$dbhost = 'localhost:8889';
+	$dbuser = 'root';
+	$dbpass = 'root';
+	$db = 'chatbox';
+	
+	$con = mysql_connect($dbhost, $dbuser, $dbpass);
+	mysql_select_db($db);
 
-	$link = mysql_connect(
-	   "$host:$port", 
-	   $user, 
-	   $password
-	);
-	$db_selected = mysql_select_db(
-	   $db, 
-	   $link
-	);
+	//Create 
+
+	/* // Check connection
+	if ($con->connect_error) {
+    	die("Connection failed: " . $conn->connect_error);
+	} 
+	
+	echo "Connected successfully";
+
+	*/
+	
 ?>
