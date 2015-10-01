@@ -13,11 +13,13 @@
 	$_SESSION['description'] = $_POST['description'];
 	$issue = $_SESSION['description'];
 	$issue = mysql_real_escape_string($issue);
+	$labledIssue = "<h4>You said:</h4><p>" . $issue . "</p><br />";
 	
 //Generating  and storing random user id
 	$user = rand(100, 199);
+	$_SESSION['user'] = $user;
 
-	$query = "INSERT INTO messages (user, messages) VALUES ('" . $user . "', '" . $issue . "')";
+	$query = "INSERT INTO messages (user, messages) VALUES ('" . $user . "', '" . $labledIssue . "')";
 
 	if (!mysql_query($query, $con)) {
 			die('Error: ' . mysql_error($con));

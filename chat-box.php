@@ -5,11 +5,9 @@
 					<li class="step3"><h3>Step3</h3><p>pay</p></li>
 					<li class="step4"><h3>Step4</h3><p>relax</p></li>
 				</ul>
-            	<div class="chat-column">
 	            	<form method="post" action="PHP_SCRIPTS/START_CHAT.php">
 	            		<textarea name="description" class="describe" id="describe" placeholder="Describe your issue" rows="6" required></textarea>
 						<p>Note: in 99% of the case we need your hosting information. Please have this on hand.</p>
 	            		<input name="submit" type="submit" value="Next" />
 	            	</form>
-            	</div>
             </div>

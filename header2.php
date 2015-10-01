@@ -1,19 +1,8 @@
 <?php
-        include 'includes/connections';
-        session_start();
-        $dev = $_SESSION['dev'];
-        $experience = $_SESSION['experience'];
-        $degree = $_SESSION['degree'];
-        $projects = $_SESSION['projects'];
-        $school = $_SESSION['school'];
 
-        $query = "SELECT* FROM devs WHERE name='" . $dev . "'";
+// php script moved to PHP_SCRIPTS/pull.php
+include 'pull.php';
 
-        //pull in dev's info as assoc array
-        $result = mysql_query($query, $con);
-        $devInfo = mysql_fetch_assoc($result);
-
-        //echo $devInfo['experience'];
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -25,6 +14,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
                 <script src="js/jquery-1.11.3.min.js"></script>
+                <script src="js/chatEngine.js" type="text/javascript"></script>
 	</head>
 	<header>
 
