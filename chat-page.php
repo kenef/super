@@ -7,9 +7,9 @@
             <div class="four-steps">
         			<ul class="main-nav">
         				<li class="step1"><h3>Step 1</h3><p>basic info</p></li>
-        				<li class="step2 active"><h3>Step2</h3><p>chat with dev</p></li>
-        				<li class="step3"><h3>Step3</h3><p>pay</p></li>
-        				<li class="step4"><h3>Step4</h3><p>relax</p></li>
+        				<li class="step2 active"><h3>Step 2</h3><p>chat with dev</p></li>
+        				<li class="step3"><h3>Step 3</h3><p>pay</p></li>
+        				<li class="step4"><h3>Step 4</h3><p>relax</p></li>
         			</ul>
         			<hr>
             	
